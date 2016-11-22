@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-color: #ddd;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  color: #333;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  color: #999;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #555;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #555;
+  margin: 5px 0;
+}
+
+.name {
+  font-weight: bold;
+  color: #444;
+}
+
+.deadline {
+  color: #999;
+  margin-left: 15px;
+}

@@ -1,0 +1,11 @@
+<h2>Your tasks</h2>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <div class="completed-<%= task.completed %>" />
+      <span class="name"><%= task.name %></span>
+      <span class="deadline"><%= task.deadline %></span>
+    </li>
+  <% end %>
+</ul>
