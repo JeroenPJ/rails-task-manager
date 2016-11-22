@@ -2,10 +2,14 @@
 
 <ul>
   <% @tasks.each do |task| %>
-    <li>
-      <div class="completed-<%= task.completed %>" />
-      <span class="name"><%= task.name %></span>
+    <li class='completed-<%= task.completed %>'>
+      <%= link_to complete_path(task), method: :patch do %>
+        <div class='checkbox'></div>
+      <% end %>
+      <span class="title"><%= link_to task.title, task_path(task) %></span>
       <span class="deadline"><%= task.deadline %></span>
     </li>
   <% end %>
 </ul>
+
+<%= link_to "Create a new task", new_task_path %>
